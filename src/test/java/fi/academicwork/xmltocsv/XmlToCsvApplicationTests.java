@@ -26,7 +26,7 @@ class XmlToCsvApplicationTests {
 	}
 
 	@Before
-	public void setUp() {
+	public void setUp() throws Exception {
 		File xmlFile = new File("src/main/resources/exampleInvoice.xml");
 		XmlToCSVConverter converter = new XmlToCSVConverter();
 		converter.convertXMLtoCSV(xmlFile);

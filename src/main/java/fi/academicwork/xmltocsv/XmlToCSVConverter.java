@@ -5,7 +5,7 @@ import java.io.File;
 
 public class XmlToCSVConverter {
 
-    public void convertXMLtoCSV(File xmlFile) {
+    public void convertXMLtoCSV(File xmlFile) throws Exception {
 
         String xsdFile = "src/main/xsd/finvoice.xsd";
         String outputFile = "src/main/output/output.csv";
@@ -17,14 +17,10 @@ public class XmlToCSVConverter {
         // java object from xml file
         Finvoice invoiceObject = converter.convertXMLToObject(xmlFile, xsdFile);
 
-        try {
-            // parsing data from object to list of lines
-            List<String[]> csvRows = parser.parseInvoiceObject(invoiceObject);
+        // parsing data from object to list of lines
+        List<String[]> csvRows = parser.parseInvoiceObject(invoiceObject);
 
-            // writing datalines to csv file
-            writer.writeToCSV(csvRows, outputFile);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        // writing datalines to csv file
+        writer.writeToCSV(csvRows, outputFile);
     }
 }
