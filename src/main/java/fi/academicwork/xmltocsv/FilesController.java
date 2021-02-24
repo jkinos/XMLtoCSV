@@ -10,9 +10,7 @@ import java.io.File;
 import java.io.FileInputStream;
 
 @RestController
-@CrossOrigin("*")
-@RequestMapping("/api")
-public class Controller {
+public class FilesController {
 
     @PostMapping("/xmltocsv")
     public ResponseEntity<Resource> convertXMLtoCSV(@RequestParam("file") MultipartFile file) throws Exception {
@@ -26,7 +24,7 @@ public class Controller {
         converter.convertXMLtoCSV(xmlFile);
 
         // response body
-        File csvFile = new File("src/main/output/output.csv");
+        File csvFile = new File("src/main/csv/output.csv");
         Resource resource = new InputStreamResource(new FileInputStream(csvFile));
 
         // response headers

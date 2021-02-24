@@ -8,7 +8,7 @@ public class XmlToCSVConverter {
     public void convertXMLtoCSV(File xmlFile) throws Exception {
 
         String xsdFile = "src/main/xsd/finvoice.xsd";
-        String outputFile = "src/main/output/output.csv";
+        String outputFile = "src/main/csv/output.csv";
 
         XmlToObjectConverter converter = new XmlToObjectConverter();
         ObjectParser parser = new ObjectParser();

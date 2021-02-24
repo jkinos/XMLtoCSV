@@ -1,0 +1,31 @@
+{
+  "name": "xml-to-csv",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkinos/XMLtoCSV.git"
+  },
+  "author": "Jenna Kinos",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^5.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

@@ -48,7 +48,6 @@ class XmlToCsvApplicationTests {
 
 			while (((nextLine1 = reader1.readNext()) != null) && ((nextLine2 = reader2.readNext()) != null)) {
 				{
-
 					for (int i = 0; i < nextLine1.length; i++) {
 						String first = nextLine1[i];
 						String second = nextLine2[i];
@@ -60,5 +59,4 @@ class XmlToCsvApplicationTests {
 			e.printStackTrace();
 		}
 	}
-
 }
