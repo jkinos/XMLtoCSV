@@ -2,7 +2,19 @@ clean target directory, generate java classes from xsd-schema into the target di
 ```
 mvn clean compile
 ```
-run application and convert exampleInvoice.xml into output.csv in the output-directory:
+run application server:
 ```
 mvn springboot:run 
+```
+build front-end code
+```
+npm run build
+```
+build frontend code in watch-mode for dedelopment:
+```
+npm run watch
+```
+build maven project and packages into jar:
+```
+mvn package
 ```
