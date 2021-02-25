@@ -1,0 +1,107 @@
+:root {
+    --primary: #1de9b6;
+    --secondary: #bdbdbd;
+    --secondary-light: #f5f5f5;
+    --dark: #373737;
+    ;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--secondary-light);
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgb(18 21 26 / 4%), 0 16px 32px 0 rgb(18 21 26 / 12%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding-bottom: 10%;
+    ;
+    padding-left: 10%;
+    padding-right: 10%;
+    ;
+}
+
+.card-content {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+.fileInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.btn {
+    padding: 20px;
+    line-height: 40px;
+    display: inline-block;
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.fileInput,
+.btn {
+    font-size: 1.25em;
+    font-weight: 700;
+    cursor: pointer;
+    margin: none;
+}
+
+.fileInput:focus,
+.btn:focus {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.btn:hover {
+    background-color: #27fcbc;
+}
+
+.btn.download {
+    border-style: none;
+}
+
+.btn:disabled {
+    background-color: var(--secondary-light);
+    color: var(--secondary);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 2rem;
+    position: relative;
+    top: 6px;
+    padding-right: 10px;
+}
