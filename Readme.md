@@ -1,4 +1,4 @@
-# [Demo App](https://xml-invoice-to-csv.herokuapp.com/)
+# Demo: https://xml-invoice-to-csv.herokuapp.com/
 
 
 ### Useful commands
