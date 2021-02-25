@@ -1,7 +1,7 @@
 [Demo app running in Heroku](https://xml-invoice-to-csv.herokuapp.com/)
 
 
-# Useful commands
+### Useful commands
 
 clean target directory, generate java classes from xsd-schema into the target directory and compile code:
 ```
